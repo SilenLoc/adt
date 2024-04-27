@@ -7,7 +7,7 @@ image_name := "ghcr.io/silen/shoppyb"
 run:
     cargo run
 
-@verify: test shutdown run-release api-test lint
+@verify: test run-release api-test lint
     echo ------------ verify done! ------------
 
 # Run the static code analysis
