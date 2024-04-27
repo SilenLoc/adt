@@ -1,0 +1,12 @@
+/home/silen/proj/adt/backend/target/debug/deps/libasync_trait-1ffbd511d007e042.so: /home/silen/.cargo/registry/src/index.crates.io-6f17d22bba15001f/async-trait-0.1.80/src/lib.rs /home/silen/.cargo/registry/src/index.crates.io-6f17d22bba15001f/async-trait-0.1.80/src/args.rs /home/silen/.cargo/registry/src/index.crates.io-6f17d22bba15001f/async-trait-0.1.80/src/bound.rs /home/silen/.cargo/registry/src/index.crates.io-6f17d22bba15001f/async-trait-0.1.80/src/expand.rs /home/silen/.cargo/registry/src/index.crates.io-6f17d22bba15001f/async-trait-0.1.80/src/lifetime.rs /home/silen/.cargo/registry/src/index.crates.io-6f17d22bba15001f/async-trait-0.1.80/src/parse.rs /home/silen/.cargo/registry/src/index.crates.io-6f17d22bba15001f/async-trait-0.1.80/src/receiver.rs /home/silen/.cargo/registry/src/index.crates.io-6f17d22bba15001f/async-trait-0.1.80/src/verbatim.rs
+
+/home/silen/proj/adt/backend/target/debug/deps/async_trait-1ffbd511d007e042.d: /home/silen/.cargo/registry/src/index.crates.io-6f17d22bba15001f/async-trait-0.1.80/src/lib.rs /home/silen/.cargo/registry/src/index.crates.io-6f17d22bba15001f/async-trait-0.1.80/src/args.rs /home/silen/.cargo/registry/src/index.crates.io-6f17d22bba15001f/async-trait-0.1.80/src/bound.rs /home/silen/.cargo/registry/src/index.crates.io-6f17d22bba15001f/async-trait-0.1.80/src/expand.rs /home/silen/.cargo/registry/src/index.crates.io-6f17d22bba15001f/async-trait-0.1.80/src/lifetime.rs /home/silen/.cargo/registry/src/index.crates.io-6f17d22bba15001f/async-trait-0.1.80/src/parse.rs /home/silen/.cargo/registry/src/index.crates.io-6f17d22bba15001f/async-trait-0.1.80/src/receiver.rs /home/silen/.cargo/registry/src/index.crates.io-6f17d22bba15001f/async-trait-0.1.80/src/verbatim.rs
+
+/home/silen/.cargo/registry/src/index.crates.io-6f17d22bba15001f/async-trait-0.1.80/src/lib.rs:
+/home/silen/.cargo/registry/src/index.crates.io-6f17d22bba15001f/async-trait-0.1.80/src/args.rs:
+/home/silen/.cargo/registry/src/index.crates.io-6f17d22bba15001f/async-trait-0.1.80/src/bound.rs:
+/home/silen/.cargo/registry/src/index.crates.io-6f17d22bba15001f/async-trait-0.1.80/src/expand.rs:
+/home/silen/.cargo/registry/src/index.crates.io-6f17d22bba15001f/async-trait-0.1.80/src/lifetime.rs:
+/home/silen/.cargo/registry/src/index.crates.io-6f17d22bba15001f/async-trait-0.1.80/src/parse.rs:
+/home/silen/.cargo/registry/src/index.crates.io-6f17d22bba15001f/async-trait-0.1.80/src/receiver.rs:
+/home/silen/.cargo/registry/src/index.crates.io-6f17d22bba15001f/async-trait-0.1.80/src/verbatim.rs:

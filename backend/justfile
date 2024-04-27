@@ -1,0 +1,35 @@
+hurl_opts := "--variables-file hurl.env.test --test"
+image_name := "ghcr.io/silen/shoppyb"
+
+@_list:
+    just --list --unsorted
+
+run:
+    cargo run
+
+@verify: test shutdown run-release api-test lint
+    echo ------------ verify done! ------------
+
+# Run the static code analysis
+lint:
+    cargo fmt --all -- --check
+    cargo hack clippy --feature-powerset --all-targets --workspace
+
+# Run the tests
+test:
+    cargo hack test --feature-powerset
+
+# run acceptance tests against the running test stack
+api-test *args: wait-for-api
+    hurl api/*.hurl {{hurl_opts}} {{args}}
+
+
+wait-for-api:
+	hurl api/health.hurl --retry 60 {{hurl_opts}}
+
+
+shutdown:
+    lsof -t -i:3099 | xargs -r kill &
+
+run-release: shutdown
+    just run &

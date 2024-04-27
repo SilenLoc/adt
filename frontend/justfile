@@ -1,0 +1,23 @@
+hurl_opts := "--variables-file hurl.env.test --test"
+
+@_list:
+    just --list --unsorted
+
+run:
+    cargo run
+
+@verify: test lint
+    echo ------------ verify done! ------------
+
+# Run the static code analysis
+lint:
+    cargo fmt --all -- --check
+    cargo hack clippy --feature-powerset --all-targets --workspace
+
+# Run the tests
+test:
+    cargo hack test --feature-powerset
+
+# run acceptance tests against the running test stack
+api-test *args: wait-for-api
+    hurl api/*.hurl {{hurl_opts}} {{args}}
