@@ -4,7 +4,8 @@ hurl_opts := "--variables-file hurl.env.test --test"
     just --list --unsorted
 
 run:
-    cargo run
+    npx tailwindcss -i ./input.css -o ./assets/tailwind.css --watch &
+    dx serve --hot-reload
 
 @verify: test lint
     echo ------------ verify done! ------------
@@ -17,7 +18,3 @@ lint:
 # Run the tests
 test:
     cargo hack test --feature-powerset
-
-# run acceptance tests against the running test stack
-api-test *args: wait-for-api
-    hurl api/*.hurl {{hurl_opts}} {{args}}
