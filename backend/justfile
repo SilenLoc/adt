@@ -23,10 +23,8 @@ test:
 api-test *args: wait-for-api
     hurl api/*.hurl {{hurl_opts}} {{args}}
 
-
 wait-for-api:
 	hurl api/health.hurl --retry 60 {{hurl_opts}}
-
 
 shutdown:
     lsof -t -i:3099 | xargs -r kill

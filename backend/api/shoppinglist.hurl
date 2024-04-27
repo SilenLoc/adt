@@ -18,12 +18,24 @@ Accept: application/json
 
 HTTP 200
 
-
-# get items
+# item should exist
 GET {{target}}/items
+
+HTTP 200
+[Asserts]
+jsonpath "$[?(@.title == 'Pepperoni')]" exists
+[Captures]
+id: jsonpath "$[?(@.title == 'Pepperoni')].uuid" nth 0
+
+# delete item
+DELETE {{target}}/items/{{id}}
 
 HTTP 200
 
 
+# item should not exist
+GET {{target}}/items
+
+HTTP 200
 [Asserts]
-jsonpath "$[?(@.title == 'Pepperoni')]" exists
+jsonpath "$[?(@.title == 'Pepperoni')]" isEmpty
