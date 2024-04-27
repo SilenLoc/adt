@@ -29,7 +29,7 @@ wait-for-api:
 
 
 shutdown:
-    lsof -t -i:3099 | xargs -r kill &
+    lsof -t -i:3099 | xargs -r kill
 
 run-release: shutdown
     just run &
